@@ -28,3 +28,11 @@ have:64
 
 아니면 나중에 Makefile이나 이런데 경로를 잘 설정해줘서 바로바로 해줘도 될듯 
 아니면 진짜 헤더파일들 많은 곳에 넣어서 <>  이런식으로 include 일단 모르겠고 되니깐 더 안 건드려야겠다.
+
+
+
+
+
+gzappend.c 
+실행: ~/gowon_re/wasm-micro-runtime/product-mini/platforms/linux/build/iwasm --dir=. ./fitblk_c~/zlib/examplesustom.wasm gowonisgood.gz ./file1.txt ./file2.txt
+빅 이슈 : iwasm --dir=. test.wasm 이런식으로 하면 파일 시스템을 iwasm으로 사용할 수 있음.
