@@ -6,10 +6,10 @@ original : https://github.com/emscripten-ports/libpng.git
 how to ?
 
 1. git clone https://github.com/emscripten-ports/libpng.git
-2. 진짜 어케 했더라..? \n
-3.emconfigure ./configure --prefix=$(pwd)/emscripten_build CFLAGS="-sUSE_ZLIB=1" \n
-4.emmake make \n
-5.emmake make install \n
+2. 진짜 어케 했더라..?
+3.emconfigure ./configure --prefix=$(pwd)/emscripten_build CFLAGS="-sUSE_ZLIB=1"
+4.emmake make
+5.emmake make install 
 
 그리고 컴파일 할때는 
 
