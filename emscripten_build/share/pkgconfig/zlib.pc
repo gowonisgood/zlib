@@ -1,0 +1,13 @@
+prefix=/home/cha/zlib/emscripten_build
+exec_prefix=/home/cha/zlib/emscripten_build
+libdir=/home/cha/zlib/emscripten_build/lib
+sharedlibdir=/home/cha/zlib/emscripten_build/lib
+includedir=/home/cha/zlib/emscripten_build/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.8
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
