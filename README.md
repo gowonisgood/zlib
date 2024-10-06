@@ -34,7 +34,8 @@ have:64
 
 
 gzappend.c 
-실행: ~/gowon_re/wasm-micro-runtime/product-mini/platforms/linux/build/iwasm --dir=. ./fitblk_c~/zlib/examplesustom.wasm gowonisgood.gz ./file1.txt ./file2.txt
+컴파일 : clang --target=wasm32-wasi --sysroot=/opt/wasi-sdk/share/wasi-sysroot -I/home/cha/zlib/emscripten_build/include -L/home/cha/zlib/emscripten_build/lib -o gzappend.wasm gzappend.c -lz -nostdlib -Wl,--no-entry
+실행: ~/gowon_re/wasm-micro-runtime/product-mini/platforms/linux/build/iwasm --dir=/home/cha/zlib/examples ./gzappend.wasm gowonisgood.gz ./file1.txt ./file2.txt
 빅 이슈 : iwasm --dir=. test.wasm 이런식으로 하면 파일 시스템을 iwasm으로 사용할 수 있음.
 
 ------------------------------------------------------------------------------------
